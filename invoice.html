@@ -41,10 +41,14 @@
     <tfoot>
       <tr>
         <th colspan="3" align="center">المجموع الكلي:</th>
-        <th>150$</th>
-      </tr>
+        <th id="grand-total">150$</th>      </tr>
     </tfoot>
   </table>
+  <br>
+  <button onclick="calculateTotal()">تحديث المجموع</button>
+  <p>بيانات من الخادم: <strong id="api-result">...</strong></p>
+
+  <script src="invoice.js"></script>
 
 </body>
 </html>
