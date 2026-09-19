@@ -1,0 +1,17 @@
+/* 1. إضافة حدود للجدول (The table has borders) */
+table, th, td {
+    border: 1px solid #333;
+    border-collapse: collapse; /* ضرورية لدمج الحدود المزدوجة وجعلها خطاً واحداً أنيقاً */
+}
+
+/* 2. تلوين الصفوف بالتناوب (Table rows use alternating background colours) */
+/* هذه التعليمة تستهدف الصفوف الزوجية (even) في جسم الجدول وتلونها برمادي فاتح */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+/* 3. محاذاة عمود "الإجمالي" إلى اليمين (The totals column is aligned to the right) */
+/* بما أن عمود الإجمالي هو العمود الرابع والأخير، نستهدفه بهذه التعليمة */
+th:last-child, td:last-child {
+    text-align: right;
+}
