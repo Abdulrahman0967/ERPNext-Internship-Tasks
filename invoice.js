@@ -27,3 +27,4 @@ function fetchUserData() {
 
 // استدعاء الدالة لتعمل فور تحميل الصفحة
 fetchUserData();
+//4 دالة جديدة
